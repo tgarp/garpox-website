@@ -339,8 +339,10 @@ h1, h2, h3, h4 {
 
 @media (max-width: 860px) {
   .hero-grid { grid-template-columns: 1fr; gap: 32px; }
-  .hero-portrait { order: -1; width: 220px; max-width: 60%; }
-  .hero-portrait::before { inset: 10px -10px -10px 10px; }
+  .hero-grid { gap: 24px; }
+  .hero-portrait { order: -1; width: 104px; }
+  .hero-portrait img { aspect-ratio: 1; border-radius: 50%; object-position: center 25%; }
+  .hero-portrait::before { inset: -5px; border-radius: 50%; opacity: 0.7; }
   .hero-portrait figcaption { display: none; }
 }
 
